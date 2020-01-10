@@ -6,16 +6,16 @@ function FibonacciEven(n) {
     let last = 2;
     let secondToLast = 1;
     let next = 3;
-    let sum = 0;
+    let sum = 2;
+
     do {
         if(next % 2 == 0) {
             sum += next;
         }
-        last = next;
-        secondToLast = last;
-        next = last + secondToLast;
 
-        
+        secondToLast = last;
+        last = next;
+        next = last + secondToLast;
     }
     while (next <= n )
         
