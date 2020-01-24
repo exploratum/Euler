@@ -14,7 +14,7 @@ function largestPalindrome(n) {
     for(let i=largestNumber; i>0; i--) {
         for(let j=largestNumber; j>0; j--) {
             let product = (i * j) + '';
-            if((product+'').split().reverse().join() == product) {
+            if((product+'').split('').reverse().join('') == product) {
                 return product
             }
         }
